@@ -1,4 +1,4 @@
-module github.com/cenit-ai/go-integration-tests
+module github.com/pinkyxw/go-integration-tests
 
 go 1.24.4
 

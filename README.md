@@ -7,13 +7,13 @@ servicio bajo prueba y valida respuestas y estado de MongoDB.
 ## Instalación
 
 ```bash
-go get github.com/cenit-ai/go-integration-tests
+go get github.com/pinkyxw/go-integration-tests
 ```
 
 Durante desarrollo local con repositorios hermanos, agrega al `go.mod` del proyecto:
 
 ```
-replace github.com/cenit-ai/go-integration-tests => ../go-integration-tests
+replace github.com/pinkyxw/go-integration-tests => ../go-integration-tests
 ```
 
 ## Uso mínimo
@@ -23,7 +23,7 @@ package integration_test
 
 import (
     "testing"
-    "github.com/cenit-ai/go-integration-tests/yamlintegration"
+    "github.com/pinkyxw/go-integration-tests/yamlintegration"
 )
 
 func TestIntegration(t *testing.T) {
