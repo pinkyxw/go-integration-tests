@@ -7,15 +7,18 @@ servicio bajo prueba y valida respuestas y estado de MongoDB.
 ## Instalación
 
 ```bash
-go get github.com/pinkyxw/go-integration-tests
+go get github.com/pinkyxw/go-integration-tests@main
 ```
 
-Durante desarrollo local con repositorios hermanos, agrega al `go.mod` del proyecto:
+Usa siempre una revisión explícita (`@main`, `@latest` o un tag `v0.1.0`). Un `go get` sin sufijo intenta resolver `v0.0.0` como tag y falla.
+
+**Opcional (solo desarrollo local):** con el repo clonado al lado del tuyo:
 
 ```
-replace github.com/pinkyxw/go-integration-tests => ../go-integration-tests
+replace github.com/pinkyxw/go-integration-tests v0.0.0-… => ../go-integration-tests
 ```
 
+(sustituye la pseudoversión por la que tengas en `go.mod`, o añade el `require` tras un `go get @main` y luego el `replace`.)
 ## Uso mínimo
 
 ```go
