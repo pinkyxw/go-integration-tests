@@ -26,7 +26,7 @@ func httpClientTimeout() time.Duration {
 			return d
 		}
 	}
-	return 30 * time.Second
+	return 120 * time.Second
 }
 
 // ExecuteHTTPRequest realiza una petición HTTP real y devuelve la respuesta.
